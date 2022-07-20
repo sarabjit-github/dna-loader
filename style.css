@@ -1,0 +1,203 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #212121;
+  overflow: hidden;
+}
+
+.loader-container {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* You can add transform: rotate(); property here acc. user requirements */
+}
+h1 {
+  color: rgba(184, 184, 184, 0.289);
+  line-height: 110px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.pink-dot-container,
+.blue-dot-container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: max-content;
+  height: max-content;
+}
+
+.dot,
+.b-dot {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 14px;
+  animation: helix 2s linear infinite both;
+  transform: translate3d(0, 0, 0px) scale(0.8);
+  opacity: 0.85;
+}
+.dot {
+  background: rgb(255, 76, 106);
+}
+.b-dot {
+  background: rgb(255, 255, 255);
+}
+
+/* Adding animation-delay in each pink-dot */
+.dot1 {
+  animation-delay: -4.3s;
+}
+.dot2 {
+  animation-delay: -4s;
+}
+.dot3 {
+  animation-delay: -3.7s;
+}
+.dot4 {
+  animation-delay: -3.4s;
+}
+.dot5 {
+  animation-delay: -3.1s;
+}
+.dot6 {
+  animation-delay: -2.8s;
+}
+.dot7 {
+  animation-delay: -2.5s;
+}
+.dot8 {
+  animation-delay: -2.2s;
+}
+.dot9 {
+  animation-delay: -1.9s;
+}
+.dot10 {
+  animation-delay: -1.6s;
+}
+.dot11 {
+  animation-delay: -1.3s;
+}
+.dot12 {
+  animation-delay: -1.0s;
+}
+.dot13 {
+  animation-delay: -0.7s;
+}
+.dot14 {
+  animation-delay: -0.4s;
+}
+.dot15 {
+  animation-delay: -0.1s;
+}
+/* Adding animation-delay in each white-dot. It is one second delay related to pink-dot */
+.bd1 {
+  animation-delay: -5.3s;
+}
+.bd2 {
+  animation-delay: -5.0s;
+}
+.bd3 {
+  animation-delay: -4.7s;
+}
+.bd4 {
+  animation-delay: -4.4s;
+}
+.bd5 {
+  animation-delay: -4.1s;
+}
+.bd6 {
+  animation-delay: -3.8s;
+}
+.bd7 {
+  animation-delay: -3.5s;
+}
+.bd8 {
+  animation-delay: -3.2s;
+}
+.bd9 {
+  animation-delay: -2.9s;
+}
+.bd10 {
+  animation-delay: -2.6s;
+}
+.bd11 {
+  animation-delay: -2.3s;
+}
+.bd12 {
+  animation-delay: -2.0s;
+}
+.bd13 {
+  animation-delay: -1.7s;
+}
+.bd14 {
+  animation-delay: -1.4s;
+}
+.bd15 {
+  animation-delay: -1.1s;
+}
+
+@keyframes helix {
+  0% {
+    transform: translate3d(0, 0px, 0px) scale(0.8);
+    opacity: 0.85;
+  }
+  25% {
+    transform: translate3d(0, 48px, -2px) scale(1.3);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(0, 96px, -1px) scale(0.8);
+    opacity: 1;
+  }
+  75% {
+    transform: translate3d(0, 48px, 2px) scale(0.4);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(0, 0, 0px) scale(0.35);
+    opacity: 0.75;
+  }
+}
+
+
+/* Credits  */
+footer{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+footer p{
+    line-height: 40px;
+    font-size: 16px;
+    color: aliceblue;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
