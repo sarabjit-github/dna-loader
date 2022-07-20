@@ -201,3 +201,29 @@ footer p a{
     color: white;
     font-weight: 600;
 }
+
+/* Media Queries */
+@media (max-width:800px) {
+    .dot, .b-dot{
+        width: 10px;
+        height: 10px;
+        margin: 0 11px;
+    }
+}
+@media (max-width:560px) {
+    .dot, .b-dot{
+        width: 8px;
+        height: 8px;
+        margin: 0 9px;
+    }
+}
+@media (max-width:470px) {
+    .loader-container{
+        transform: rotateX(5deg) scale(.8);
+    }
+}
+@media (max-width:390px) {
+    .loader-container{
+        transform: rotateX(5deg) scale(.7);
+    }
+}
